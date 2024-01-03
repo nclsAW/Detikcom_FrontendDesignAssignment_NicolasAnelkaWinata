@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Frontend Design Assignment</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top d-flex justify-content-center">
+            <a class="flex-grow-1" id="logo" href="#home">
+                <img src="img/logo-detikhealth.png" alt="logo-detikhealth">
+            </a>
+            <ul>
+                <li class="list"><a class="rounded-pill" href="#home">Home</a></li>
+                <li class="list"><a class="rounded-pill" href="#acara">Tentang Acara</a></li>
+                <li class="list"><a class="rounded-pill" href="#galeri">Galeri</a></li>
+                <li class="list"><a class="rounded-pill" href="#berita">Berita</a></li>
+                <li><a id="button" href="https://event.detik.com/">Registrasi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="hero-bg"></div>
+            <a class="button" href="#acara">TENTANG ACARA</a>
+        </section>
+        <article class="container" id="#acara">
+            <section class="row">
+            <section class="col-md-6" id="col-1">
+                <div class="card" id="card-lg">
+                    <img src="img/map.png" alt="Map">
+                    <h1>10K FUN RUN</h1>
+                    <p>Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari<br>dimulai dari bundaran HI hingga Patung Pemuda<br>Membangun di Senayan lalu kembali lagi ke Bundaran HI!</p>
+                </div>
+            </section>
+
+            <section class="col-md-6" id="col-2">
+                <div class="card" id="card-sm">
+                    <h1>GRATIS DAN BERHADIAH</h1>
+                    <p>Pendaftaran gratis! Ajak keluarga anda dan menangkan<br>hadiah total puluhan juta rupiah doorprize menarik</p>
+                </div>
+                <div class="card" id="card-sm">
+                    <h1>50+ TENANT BAZZAR</h1>
+                    <p>Dapatkan promo menarik pada booth-booth tenant bazzar<br>Sudirman Run 2023 mulai dari F&B hingga fashion</p>
+                </div>
+                <div class="card" id="card-md">
+                    <section id="special">
+                        <img src="img/special.png" alt="">
+                    </section>
+                    
+                    <section id="text">
+                        <h1>SPECIAL<br>PERFORMANCE</h1>
+                        <p>Saksikan penampilan dari RAN, Ayu<br>Ting Ting, Diskoria, serta hiburan<br>lainnya!</p>
+                    </section>
+                </div>
+            </section>
+            <section id="reg-btn">
+                <a class="button" id="daftar-btn" href="">DAFTAR SEKARANG</a>
+            </section>
+        </article>
+        <section class="sponsor">
+            <h1>DIDUKUNG OLEH</h1>
+            <div class="logo-sponsor">
+                <div class="logo-slider">
+                    <img src="img/sponsor-1.png">
+                    <img src="img/sponsor-2.png">
+                    <img src="img/sponsor-3.png">
+                    <img src="img/sponsor-4.png">
+                    <img src="img/sponsor-5.png">
+                    <img src="img/sponsor-6.png">
+                    <img src="img/sponsor-7.png">
+                    <img src="img/sponsor-8.png">
+                </div>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="img/footer.png" alt="Footer">
+    </footer>
+</body>
+<script>
+    var copy = document.querySelector('.logo-slider').cloneNode(true)
+    document.querySelector('.logo-sponsor').appendChild(copy)
+</script>
+<script href="vendor/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
